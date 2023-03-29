@@ -18,7 +18,8 @@ export class Chat {
       ? `Answer me in ${process.env.LANGUAGE},`
       : '';
 
-    return `Bellow is the code patch, please help me do a brief code review,${answerLanguage} if any bug risk and improvement suggestion are welcome
+    return `Bellow is the code patch, please help me do a brief code review,${answerLanguage} Raise an issue for potential bugs or code smells. Do not response anything irrelevant like code base structure.
+    Also, leaves "Looks good to me" only if you think there's no problem with the code. Make it short, bullet points are preferred. 
     ${patch}
     `;
   };
